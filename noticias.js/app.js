@@ -1,4 +1,5 @@
 var express = require('express');
+var msg = require('./mode_teste');
 var app = express();
 
 app.set('view engine','ejs');
@@ -17,5 +18,5 @@ app.get('/noticias',function(req,res){
 
 
 app.listen(3000,function(){
-    console.log('rodou');
+    console.log(msg());
 });
